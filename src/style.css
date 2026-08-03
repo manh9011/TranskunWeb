@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --ink: #141311;
+  --panel: #1c1a17;
+  --panel-raised: #24211d;
+  --ivory: #f4efe4;
+  --ivory-dim: #b7b0a1;
+  --ebony: #0d0c0b;
+  --brass: #c9a24b;
+  --brass-bright: #e6c274;
+  --red: #c65b4e;
+  --green: #7fae6a;
+  --hairline: rgba(244, 239, 228, 0.12);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px 80px;
+}
+
+a {
+  color: var(--brass-bright);
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--ebony);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
